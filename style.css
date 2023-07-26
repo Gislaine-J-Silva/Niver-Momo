@@ -1,0 +1,486 @@
+        /*FONTS*/
+
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lobster+Two:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    outline: none;
+    border: none;
+    text-decoration: none;
+}
+
+:root {
+    --main-color: #00BAF2;
+    --black-color: #020608;
+}
+
+html {
+    font-size: 62.5%;
+    overflow-x: hidden;
+}
+
+body {
+    background: var(--main-color);
+}
+
+section {
+    padding: 7%;
+    align-items:  center;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 1.5rem;
+    background: url(img/SL-030221-41190-15.jpg);
+    border-bottom: .3rem solid var(--main-color);
+    padding: 1.5rem 7%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    
+}
+.header .logo img{
+    height: 6rem;
+}
+
+.header .menu a{
+    margin: 0 3rem;
+    font-size: 2rem;
+    color: #fff;
+    font-family: 'Cormorant Garamond', serif;
+}
+
+.header .menu a:hover{
+    color: var(--main-color);
+}
+
+.header .icon {
+    cursor: pointer;
+    font-size: 2.5rem;
+    margin-left: 2rem;
+    color: #fff;
+
+}
+
+        /*TITULO DE SESSÃO*/
+.titulo {
+    font-size: 4rem;
+    text-align: center;
+    text-transform: uppercase;
+    padding-bottom: 3.5rem;
+    color: #262626;
+ }
+
+        /*INICIO*/
+.inicio {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    background: url(img/inicio.png) no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.inicio .container h1{
+    font-size: 7rem;
+    text-transform: uppercase;
+    color: #ffffff;
+    font-family: 'Cormorant Garamond', serif;
+    
+}
+
+.inicio .container img {
+    width: 100%;
+}
+
+.inicio .container p {
+    font-size: 2.5rem;
+    font-weight: lighter;
+    line-height: 2;
+    padding: 1rem 0;
+    color: var(--black-color);
+    font-style: italic;
+    font-family: 'Lobster Two', cursive;
+    
+}
+
+        /*SOBRE*/
+.sobre-com-background{
+  background: url(img/SL-030221-41190-15.jpg) no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.sobre-com-background .container-sobre {
+    height: 100%;
+    margin: 9%;
+}
+
+.sobre-com-background .container-sobre .sp {
+    text-transform: uppercase;
+    -webkit-text-stroke: 2px var(--main-color);
+    font-family: 'Cormorant Garamond', serif;
+}
+
+.sobre-com-background .container-sobre .ass {
+    color: var(--main-color);
+    font-family: 'Lobster Two', cursive;
+}
+
+.sobre-com-background .container-sobre p {
+  font-size: 2.2rem;
+  color: #fff;
+  font-family: 'Lobster Two', cursive;
+}
+
+            /*DECLARAÇÕES*/
+.declaracao  {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column; 
+    justify-content: center;
+    align-items: center;
+}
+
+.declaracao  .div-com-borda {
+  height: 47rem;
+  width: 47rem;
+  display: flex;
+  align-items: center;
+  padding: 5rem 5rem;
+  background: url(img/SL-030221-41190-15.jpg);
+  background-position: center;
+  background-size: cover;
+  border-radius: 2rem;
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.declaracao .div-com-borda p {
+    font-size: 2.2rem;
+    padding: 2rem 0;
+    line-height: 1.8;
+    color: #F8F9F8;
+    font-style: italic;
+    font-family: 'Cormorant Garamond', serif;
+}
+
+        /*Namoro*/
+.data-namo {
+    background: url(img/SL-030221-41190-15.jpg) no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+}
+.data-namo .grid-container {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column; 
+    justify-content: center;
+    align-items: center;
+  
+}
+
+.data-namo .header-namo {
+  padding: 5rem;
+  font-size: 2.5rem;
+  border-radius: 2rem;
+  
+}
+
+.data-namo .header-namo h1, 
+.data-namo .header-namo h3{
+    margin-bottom: 3rem;
+    text-align: center;
+    color: #FFFF;
+    font-size: 3rem;
+    font-family: 'Cormorant Garamond', serif;
+}
+
+.data-namo .header-namo span {
+    color: var(--main-color);
+    
+}
+
+.data-namo .content {
+  padding: 8rem;
+  font-size: 2rem;
+  align-items: center;
+  border-radius: 2rem;
+  color: #FFFF;
+  border: .3rem solid var(--main-color);
+}
+
+.data-namo .content p {
+   padding-bottom: 2rem;
+   text-align: center;
+   font-family: 'Lobster Two', cursive;
+}
+
+
+        /* ------ Avaliações ------ */
+.avaliacao .container-avaliacao {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    gap: 1.5rem;
+}
+
+.avaliacao .container-avaliacao .box-momo  {
+    padding: 3rem 2rem;
+    text-align: center;
+    background: url(img/SL-030221-41190-15.jpg) no-repeat;
+    background-position: center;
+    background-size: cover;
+    border-radius: 2rem;
+}
+
+.avaliacao h1 {
+    font-family: 'Cormorant Garamond', serif;
+    font-style: bold;
+    font-size: 5rem;
+    margin-bottom: 5rem;
+    border-radius: 2rem;
+    padding-top: 2rem;
+    background: url(img/SL-030221-41190-15.jpg);
+    color: #00BAF2;
+}
+
+.avaliacao .container-avaliacao .box-momo p {
+    font-size: 2rem;
+    padding: 2rem 0;
+    line-height: 1.8;
+    color: #F8F9F8;
+    font-family: 'Cormorant Garamond', serif;
+    
+}
+
+.avaliacao .container-avaliacao .box-momo .amor {
+    width: 8rem;
+    height: 8rem;
+    border-radius: 50%;
+    object-fit: cover;
+    
+}
+
+.avaliacao .container-avaliacao .box-momo  h3 {
+    font-size: 2rem;
+    padding: 1rem 0;
+    color: #F8F9F8;
+    font-family: 'Cormorant Garamond', serif;
+}
+
+.avaliacao .container-avaliacao .box-momo .estrelas i {
+    font-size: 2rem;
+    color: var(--main-color);
+    margin-top: 2rem;
+}
+
+        /*MAPA*/
+
+.mapa {
+    background: url(img/SL-030221-41190-15.jpg) no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.mapa .cabecalho {
+    font-size: 4rem;
+    text-align: center;
+    text-transform: uppercase;
+    padding-bottom: 3.5rem;
+    color: var(--main-color);
+    font-family: 'Cormorant Garamond', serif;
+ }
+
+.mapa .flex-container-map {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    background: #00baf285;
+}
+
+.mapa .flex-container-map .imagem {
+    flex: 1 1 70rem;
+}
+
+.mapa .flex-container-map .imagem img {
+    width: 100%;
+    height: 100%;
+}
+.mapa .flex-container-map .ref {
+    flex: 1 1 45rem;
+    padding: 2rem;
+}
+.mapa .flex-container-map .ref p {
+    font-size: 1.8rem;
+    padding: 1rem 0;
+    line-height: 1.8;
+    color:#ffffff;
+    font-family: 'Lobster Two', cursive;
+}
+
+        /*RODAPÉ*/
+.rodape {
+    text-align: center;
+    background: url(img/SL-030221-41190-15.jpg);
+    border-top: .3rem solid var(--main-color);
+    padding-top: 1.8rem;
+    padding-bottom: 1.8rem;
+}
+
+.rodape .link-menu {
+    display: flex;
+    justify-content: center;
+    padding: 2rem 0;
+    flex-wrap: wrap;
+    gap: 1rem;
+} 
+.rodape .link-menu a {
+    font-size: 1.7rem;
+    padding: .7rem 2rem;
+    color: #fff;
+    border: .2rem solid var(--main-color);
+    border-radius: 2rem;
+}
+
+.rodape .link-menu a:hover {
+    color: var(--main-color);
+}
+
+.rodape .credito {
+    font-size: 1.5rem;
+    font-weight: lighter;
+    padding: 1.5rem;
+    color: #fff;
+}
+
+.rodape .credito span {
+    color: var(--main-color);
+}
+
+        /*Responsivo*/
+@media (min-width: 1796px) {
+    .declaracao {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(50rem, 1fr));
+        gap: 1.5rem;
+    }
+
+}
+
+@media (max-width:1795px) {
+    .declaracao {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(40rem, 1fr));
+        gap: 1.5rem;
+    }
+}
+@media (min-width:1500px) {
+    .data-namo .content {
+        padding: 8rem;
+    }
+
+    .data-namo .content p {
+        font-size: 2.2rem;
+    }
+}
+@media (max-width:1350px) and (min-width:1150px) {
+    .declaracao  {
+        margin-left: 8%;
+    }
+}
+
+@media (max-width: 998px) {
+    html {
+        font-size: 55%;
+    }
+        
+    .header {
+        padding: 1.5rem 2rem;
+    }
+
+    .header .menu a{
+        margin: 0 2rem;
+    }
+
+    .data-namo .header-namo {
+        font-size: 1.7rem;
+    }
+
+    .data-namo .content1,
+    .data-namo .content2 {
+        font-size: 1.6rem;
+        padding: 5rem;
+    } 
+}
+@media (min-width:768px) {
+    .header .icon {
+        color: transparent;
+    }
+}
+@media (max-width: 768px) {
+    #menu-botao{
+        display: inline-block;
+    }
+
+    .header .icon {
+        padding-right: 2rem;
+    }
+
+    .header .menu {
+        position: absolute;
+        background: url(img/SL-030221-41190-15.jpg);
+        width: 100vw;
+        height: 100vh;
+        top: 100%;
+        right: -100%;
+    }
+
+    .header .menu.active {
+        right: 0;
+    }
+    
+    .header .menu a {
+        display: grid;
+        place-content: center;
+        margin: 8%;
+        padding: 1%;
+        font-size: 4rem;
+        color: var(--main-color);
+
+    }
+}
+
+@media (max-width: 630px) {
+    .sobre-com-background .container-sobre {
+        height: 100%;
+        width: 100%;
+        margin: auto;
+        padding: auto;
+    }
+
+    .sobre-com-background .container-sobre p {
+        font-size: 1.85rem;
+    }
+}
+
+   
+
+@media (max-width: 465px) {
+    html {
+        font-size: 50%;
+    }
+
+}
